@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `DiversityJS London`,
-    description: `We are the React community in London`,
+    title: `DiversityJS London | Meetup`,
+    description: `We are the Diverse JavaScript and Web community in London`,
     author: `@118eighty8`
   },
   plugins: [
