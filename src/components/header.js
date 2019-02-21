@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.header`
-  background: 'tomato';
+  background: mediumturquoise;
 `;
 
 const Title = styled.h1`
