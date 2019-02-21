@@ -11,13 +11,18 @@ const Wrapper = styled.div`
   background: tomato;
 `;
 
+const ImageWrapper = styled.div`
+  width: 250px;
+  height: 250px;
+`;
+
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`london`, `meetup`, `diversity`, `diverse`, `black tech`, `javascript`, `front end`, `back end`, `web development`]} />
     <Wrapper>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <ImageWrapper>
         <Image />
-      </div>
+      </ImageWrapper>
       <Link to="/page-2/">Go to page 2</Link>
     </Wrapper>
   </Layout>
