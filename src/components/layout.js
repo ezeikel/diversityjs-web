@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Header from "./header";
 import Footer from "./footer";
 import "./normalize.css";
+import GlobalStyle from "../GlobalStyle";
 
 const PageWrapper = styled.div`
   min-height: 100vh;
@@ -25,11 +26,14 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <PageWrapper>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
-        <Footer />
-      </PageWrapper>
+      <Fragment>
+        <GlobalStyle />
+        <PageWrapper>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <main>{children}</main>
+          <Footer />
+        </PageWrapper>
+      </Fragment>
     )}
   />
 );
