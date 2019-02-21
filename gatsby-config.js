@@ -47,11 +47,28 @@ module.exports = {
         //variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
         // Any additional create only fields (optional)
         sampleRate: 5,
-        siteSpeedSampleRate: 10,
+        siteSpeedSampleRate: 10
         //cookieDomain: "example.com",
-      },
+      }
     },
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: false
+      }
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Droid Sans", "Droid Serif"]
+        }
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
