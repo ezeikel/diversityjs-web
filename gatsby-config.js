@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `DiversityJS`,
+        short_name: `DiversityJS`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-134862707-1"
+        trackingId: `UA-134862707-1`
       }
     },
     `gatsby-plugin-styled-components`,
@@ -44,10 +44,10 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ["Lato", "Open Sans"]
+          families: [`Lato`, `Open Sans`]
         }
       }
     }
