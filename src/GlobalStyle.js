@@ -4,14 +4,14 @@ export default createGlobalStyle`
 /* CSS Variables */
 :root {
   /* Colors */
-  --color-primary: #1abc9c;
+  --color-primary: #1ABC9C;
   /* --color-primary: #F7E7CE; */
   --color-secondary: #F1D3D1;
   --color-tertiary: #4629D3;
   --color-radical-red: #FF3D63;
   --color-aquamarine: #62FFD3;
   --color-bittersweet: #FF7264;
-  --color-black: #2E3333;
+  --color-black: #3B3B3B;
   --color-white: #FFFFFF;
   --color-gold: #CDA349;
   --color-gold-lighter: #D4AF61;
@@ -20,9 +20,6 @@ export default createGlobalStyle`
   --color-green: #2ECC71;
   --color-grey: #BDC3C7;
   --color-dark-grey: #9B9B9B;
-  --color-black: #3b3b3b;
-  --color-white: #fff;
-  --color-gold: #CDA349;
   /* Spacing */
   --spacing-tiny: 4px;
   --spacing-small: 8px;
@@ -144,6 +141,10 @@ button[type="submit"] {
 button[type="submit"][disabled] {
   opacity: 0.7;
   text-decoration: line-through;
+}
+// Hide fonts until webfonts have loaded to avoid FOUT
+.wf-loading {
+  visibility: hidden;
 }
 `;
 
