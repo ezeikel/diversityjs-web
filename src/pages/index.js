@@ -8,7 +8,8 @@ import SEO from "../components/seo";
 
 const Wrapper = styled.div`
   display: grid;
-  background: tomato;
+  background: #ecf0f1;
+  height: 100%;
 `;
 
 const ImageWrapper = styled.div`

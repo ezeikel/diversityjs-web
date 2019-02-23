@@ -11,7 +11,7 @@ import GlobalStyle from "../GlobalStyle";
 const PageWrapper = styled.div`
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 80px 1fr 80px;
+  grid-template-rows: 25vh 1fr 25vh;
 `;
 
 const Layout = ({ children }) => (

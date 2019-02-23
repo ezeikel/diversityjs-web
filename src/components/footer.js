@@ -1,9 +1,14 @@
 import React from "react";
+import styled from "styled-components";
+
+const Wrapper = styled.footer`
+  background: #2c3e50;
+`;
 
 const Footer = () => (
-  <footer>
+  <Wrapper>
     &copy; {new Date().getFullYear()}, Built with Love by 1188
-  </footer>
+  </Wrapper>
 );
 
 export default Footer;
